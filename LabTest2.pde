@@ -8,7 +8,7 @@ void setup()
 float x = 50, y = 100;
 float xspeed = 4, yspeed = 0;
 float x1 = 450, y1 = 50;
-
+float x2 = 50, y2 = 400;
 void draw()
 {
   // World
@@ -63,7 +63,7 @@ void draw()
     xspeed *= -1;
   }
 
-  if (x1 <= 500);
+  if (x <= 500);
   {
     xspeed *= -1;
   }  
@@ -86,5 +86,13 @@ void draw()
   ellipse(x1 - 190, y1 + 100, 50, 50);
   ellipse(x1 - 210, y1 + 100, 40, 40);
   
+  //Person
+  stroke(200, 180, 200);
+  fill(200, 180, 200);
+  ellipse(x2, y2, 15, 15);
+  rect(x2 - 10, y2 + 10, 20, 40);
+  line(x2 - 5, y2 + 10, - 100, 500);
+  
+
 }
 
